@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Electricity System - Track & Save Money</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="landing-page">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-bolt"></i>
+                <span>SmartElectricity</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#benefits">Benefits</a>
+                <a href="{{ url_for('login') }}" class="btn-login">Login</a>
+                <a href="{{ url_for('signup') }}" class="btn-primary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title animate-fade-in">
+                    Track Your Electricity.<br>
+                    <span class="gradient-text">Save Money Daily.</span>
+                </h1>
+                <p class="hero-subtitle animate-fade-in-delay">
+                    Don't wait for monthly bills! Monitor your electricity consumption daily with AI-powered insights,
+                    predictions, and smart recommendations to reduce costs.
+                </p>
+                <div class="hero-cta animate-fade-in-delay-2">
+                    <a href="{{ url_for('signup') }}" class="btn-large btn-primary">
+                        <i class="fas fa-rocket"></i> Start Tracking Now
+                    </a>
+                    <a href="#how-it-works" class="btn-large btn-outline">
+                        <i class="fas fa-play-circle"></i> See How It Works
+                    </a>
+                </div>
+                <div class="hero-stats animate-fade-in-delay-3">
+                    <div class="stat-card">
+                        <div class="stat-number">30%</div>
+                        <div class="stat-label">Average Savings</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">10K+</div>
+                        <div class="stat-label">Active Users</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Monitoring</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 class="section-title">Powerful Features</h2>
+            <p class="section-subtitle">Everything you need to master your electricity consumption</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Daily Tracking</h3>
+                    <p>Log your appliance usage daily and see exactly where your money goes</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Predictions</h3>
+                    <p>Machine learning predicts tomorrow's costs and monthly bills accurately</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Smart Suggestions</h3>
+                    <p>Get personalized energy-saving tips based on your consumption patterns</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3>Budget Monitoring</h3>
+                    <p>Set monthly budgets and get alerts before you exceed your limits</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Visual Analytics</h3>
+                    <p>Beautiful charts and graphs showing your consumption trends</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h3>PDF Reports</h3>
+                    <p>Download detailed reports of your daily electricity usage</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>State Pricing</h3>
+                    <p>Accurate calculations based on your state's electricity rates</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Smart Alerts</h3>
+                    <p>Real-time notifications when approaching or exceeding budget</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-section">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Get started in 3 simple steps</p>
+            
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Sign Up & Set Budget</h3>
+                        <p>Create your account in seconds and set your monthly electricity budget</p>
+                    </div>
+                </div>
+
+                <div class="step-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Log Daily Usage</h3>
+                        <p>Enter your appliances and their daily usage - we'll calculate the cost</p>
+                    </div>
+                </div>
+
+                <div class="step-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Get Insights & Save</h3>
+                        <p>View analytics, predictions, and AI recommendations to reduce your bills</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us?</h2>
+            
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>No more surprise bills</span>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Save 20-30% on electricity</span>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Track daily consumption</span>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>AI-powered predictions</span>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Identify power-hungry appliances</span>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Budget monitoring & alerts</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Take Control?</h2>
+            <p>Join thousands of users saving money on their electricity bills</p>
+            <a href="{{ url_for('signup') }}" class="btn-large btn-primary">
+                <i class="fas fa-user-plus"></i> Create Free Account
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-bolt"></i>
+                    <span>SmartElectricity</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#benefits">Benefits</a>
+                    <a href="{{ url_for('login') }}">Login</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Smart Electricity System. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='landing.js') }}"></script>
+</body>
+</html>
